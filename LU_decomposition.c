@@ -1,11 +1,11 @@
 
-
+/*LU decomposition*/
 #include<stdio.h>
 void main()
 { float L[10][10],U[10][10],a[10][10],c[10];
   float z[10],x[10], temp;
-int i,j,k;
-int n;
+  int i,j,k;
+  int n;
 
 printf("\n please enter the size of the matrix: ");
 scanf("%d", &n);
@@ -15,7 +15,8 @@ for(i=0;i<n;i++)
 { printf("\n C[%d] = ",i+1);
 scanf("%f",&c[i]);}
 
-printf("please enter the elements of lefthand side matrix: "); printf("\n");
+printf("please enter the elements of lefthand side matrix: ");
+printf("\n");
 for(i=0;i<n;i++)
 { for(j=0;j<n;j++)
   { printf("\n a [%d] [%d] = ",i+1,j+1);
